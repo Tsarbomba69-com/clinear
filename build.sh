@@ -12,7 +12,7 @@ ar -rcs clinear.a clinear.o
 # 3. Compile code that will use the library.
 gcc -c main.c -Wall -Wextra -fdiagnostics-color=always -ggdb -o main.o
 # 4. Link static libraries to your source object.
-gcc -g -o main main.o -l:vec.a -l:clinear.a -lm -L.
+gcc -g -o main main.o -l:vec.a -l:clinear.a -lm -lGL -lglut -lGLU -L.
 # 4.1. Delete object files (optional)
 rm *.o 
 # Execute program
